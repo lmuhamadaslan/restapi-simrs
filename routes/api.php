@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 // Obat
 Route::get('/obat', 'App\Http\Controllers\api\ObatController@index');
+Route::get('/obat/{nama_barang}', 'App\Http\Controllers\api\ObatController@find');
